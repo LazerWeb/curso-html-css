@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: var(--primary-font);
+}
+
+:root{
+    --primary-font: 'Montserrat', 'Helvetica', 'sans-serif';
+    --primary-blue: #0C1633;
+    --primary-orange: #F2622E;
+    --heading-color: #212529;
+}
+
+/* GENERAL CLASSES */
+
+.m-auto{
+    margin: 0 auto;
+}
+
+.m-0{
+    margin: 0 !important;
+}
+
+.mt-0{
+    margin-top: 0 !important;
+}
+
+.mb-0{
+    margin-bottom: 0 !important;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.heading-color{
+    color: var(--heading-color);
+}
+
+h1, h2, h3{
+    font-weight: 800;
+}
+
+/* HEADER */
+
+h1{
+    font-size: 48px;
+    width: 70%;
+    margin: 0;
+}
+
+.principal-subtitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+section{
+    padding-top: 50px;
+}
+
+h2{
+    font-size: 45px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-subtitle{
+    margin: 0 auto;
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    width: 70%;
+}
+
+.title-header{
+    background-color: var(--primary-orange);
+    color: white;
+    padding: 20px;
+}
+
+/* ACHIEVEMENTS */
+
+#achievements .blue-section{
+    background-color: var(--primary-blue);
+    color: white;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+#achievements .section-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#achievements .section-content img{
+    width: 500px;
+    height: 380px;
+}
+
+#achievements .section-content .achievements-ul{
+    list-style: none;
+    width: 45%;
+}
+
+#achievements ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#achievements .section-content div{
+    width: 45%;
+}
+
+#achievements .section-content ul li{
+    font-size: 20px;
+    margin-bottom: 1.5em;
+}
+
+#achievements .orange{
+    color: var(--primary-orange);
+}
+
+#achievements .section-content strong{
+    font-weight: 700;
+}
+
+#achievements p{
+    font-size: 20px;
+}
+
+
+
+/* Course Content */
+
+.course-content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.course-content-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.course-content-section img{
+    width: 200px;
+    height: 200px;
+}
+
+.module{
+    width: 510px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.module-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.module-text h3{
+    font-size: 1.4rem;
+}
+
+.module-text span{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border-radius: 999px;
+    padding: 5px;
+}
+
+.module-content{
+    padding-left: 20px;
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    transition: all 600ms;
+}
+
+.module.active .module-content{
+    margin-top: 20px;
+}
+
+.module.active .module1, .module.active .module6{
+    height: 19px;
+}
+
+.module.active .module2{
+    height: 89px;
+}
+
+.module.active .module3, .module.active .module4{
+    height: 264px;
+}
+
+.module.active .module5, .module.active .module7{
+    height: 54px;
+}
+
+.module-content li{
+    margin-bottom: 1em;
+}
