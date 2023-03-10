@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+html, body{
+    font-size: 100%;
+}
+
 *{
     font-family: var(--primary-font);
 }
@@ -44,12 +48,85 @@ body{
     text-align: center !important;
 }
 
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
 .heading-color{
     color: var(--heading-color);
 }
 
 h1, h2, h3{
     font-weight: 800;
+}
+
+/* ACESS BUTTON */
+
+#access-btn{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    background-color: var(--primary-orange);
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+    font-size: 16px;
+}
+
+#access-btn:hover{
+    background-color: #cc5226;
+}
+
+.buy-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: none;
+    padding: 15px 20px;
+    background-color: var(--primary-orange);
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+.buy-btn span{
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    transition: all 300ms;
+}
+
+.buy-btn:hover{
+    background-color: #cc5226;
+}
+
+.buy-btn:hover span{
+    height: auto;
+    width: auto;
 }
 
 /* HEADER */
@@ -106,23 +183,30 @@ h2{
 
 /* ACHIEVEMENTS */
 
-#achievements .blue-section{
+.blue-section{
     background-color: var(--primary-blue);
     color: white;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 #achievements .section-content{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 60px;
 }
 
-#achievements .section-content img{
-    width: 500px;
-    height: 380px;
+#principal-mockup{
+    width: 550px;
+    height: 430px;
+}
+
+#laptop-mockup{
+    width: 550px;
 }
 
 #achievements .section-content .achievements-ul{
@@ -136,16 +220,12 @@ h2{
     margin: 0;
 }
 
-#achievements .section-content div{
-    width: 45%;
-}
-
 #achievements .section-content ul li{
     font-size: 20px;
     margin-bottom: 1.5em;
 }
 
-#achievements .orange{
+.orange{
     color: var(--primary-orange);
 }
 
@@ -154,7 +234,8 @@ h2{
 }
 
 #achievements p{
-    font-size: 20px;
+    font-size: 20px; 
+    margin-bottom: 1.5em;
 }
 
 
@@ -240,4 +321,52 @@ h2{
 
 .module-content li{
     margin-bottom: 1em;
+}
+
+/* BONOS SECTION */
+
+.bonos-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.bono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-height: 700px;
+}
+
+.bono-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bono img{
+    height: 380px;
+}
+
+#meet-mockup, #bootstrap-mockup{
+   width: 545px;
+}
+
+.bono .free{
+    color: #7cda24;
+}
+
+.bono .line-through{
+    text-decoration: line-through;
+    color: #ff3f00;
+}
+
+@media only screen and (max-width: 1200px){
+    .bonos-container{
+        grid-template-columns: 1fr;
+    }
 }
