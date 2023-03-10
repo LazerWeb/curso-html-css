@@ -202,7 +202,7 @@ h2{
 
 #principal-mockup{
     width: 550px;
-    height: 430px;
+    width: 430px;
 }
 
 #laptop-mockup{
@@ -349,11 +349,11 @@ h2{
 }
 
 .bono img{
-    height: 380px;
+    height: 300px;
 }
 
 #meet-mockup, #bootstrap-mockup{
-   width: 545px;
+   width: 500px;
 }
 
 .bono .free{
