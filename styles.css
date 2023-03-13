@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #f6f6f6;
 }
 
 html, body{
@@ -68,6 +69,22 @@ html, body{
     color: var(--heading-color);
 }
 
+.bg-orange{
+    background-color: var(--primary-orange);
+}
+
+.bg-blue{
+    background-color: var(--primary-blue);
+}
+
+button.bg-orange:hover{
+    background-color: #cc5226;
+}
+
+button.bg-blue:hover{
+    background-color: darkblue;
+}
+
 h1, h2, h3{
     font-weight: 800;
 }
@@ -77,18 +94,18 @@ h1, h2, h3{
 #access-btn{
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: .25rem;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    border-radius: 6px;
+    bottom: 1.875rem;
+    right: 1.875rem;
+    border-radius: .375rem;
     border: none;
-    padding: 10px;
+    padding: .625rem;
     background-color: var(--primary-orange);
     color: white;
     cursor: pointer;
     transition: all 300ms;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 #access-btn:hover{
@@ -98,53 +115,34 @@ h1, h2, h3{
 .buy-btn{
     display: flex;
     align-items: center;
-    gap: 10px;
-    border-radius: 6px;
+    gap: .625rem;
+    border-radius: .375rem;
     border: none;
-    padding: 15px 20px;
-    background-color: var(--primary-orange);
+    padding: .875rem 1.25rem;
     color: white;
     cursor: pointer;
     transition: all 300ms;
     font-size: 1.5em;
     font-weight: bold;
-    transition: all 300ms;
 }
 
-.buy-btn span{
-    overflow: hidden;
-    height: 0;
-    width: 0;
-    padding: 0;
-    margin: 0;
-    transition: all 300ms;
-}
-
-.buy-btn:hover{
-    background-color: #cc5226;
-}
-
-.buy-btn:hover span{
-    height: auto;
-    width: auto;
-}
 
 /* HEADER */
 
 h1{
-    font-size: 48px;
+    font-size: 3em;
     width: 70%;
     margin: 0;
 }
 
 .principal-subtitle{
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: bold;
 }
 
 header{
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,11 +152,11 @@ header{
 }
 
 section{
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 
 h2{
-    font-size: 45px;
+    font-size: 2.75em;
 }
 
 .video{
@@ -169,16 +167,16 @@ h2{
 
 .video-subtitle{
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 1.5rem;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25em;
     width: 70%;
 }
 
 .title-header{
     background-color: var(--primary-orange);
     color: white;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 /* ACHIEVEMENTS */
@@ -186,10 +184,10 @@ h2{
 .blue-section{
     background-color: var(--primary-blue);
     color: white;
-    padding-top: 55px;
-    padding-bottom: 55px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
 }
 
 #achievements .section-content{
@@ -197,16 +195,15 @@ h2{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 3.75rem;
 }
 
 #principal-mockup{
-    width: 550px;
-    width: 430px;
+    width: 34.375rem;
 }
 
 #laptop-mockup{
-    width: 550px;
+    width: 34.375rem;
 }
 
 #achievements .section-content .achievements-ul{
@@ -221,7 +218,7 @@ h2{
 }
 
 #achievements .section-content ul li{
-    font-size: 20px;
+    font-size: 1.25em;
     margin-bottom: 1.5em;
 }
 
@@ -234,8 +231,8 @@ h2{
 }
 
 #achievements p{
-    font-size: 20px; 
-    margin-bottom: 1.5em;
+    font-size: 1.25em; 
+    margin-bottom: 1.5rem;
 }
 
 
@@ -243,23 +240,25 @@ h2{
 /* Course Content */
 
 .course-content{
-    margin-top: 40px;
+    margin-top: 2.5rem;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 6.25rem;
     flex-wrap: wrap;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .course-content-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .course-content-section img{
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
 }
 
 .module{
@@ -267,20 +266,20 @@ h2{
     background-color: #f4f4f4;
     padding: 20px;
     border: 1px solid #d9d9d9;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: .625rem;
+    margin-bottom: .625rem;
 }
 
 .module-text{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: .625rem;
     cursor: pointer;
 }
 
 .module-text h3{
-    font-size: 1.4rem;
+    font-size: 1.5em;
 }
 
 .module-text span{
@@ -291,7 +290,7 @@ h2{
 }
 
 .module-content{
-    padding-left: 20px;
+    padding-left: 1.25rem;
     overflow: hidden;
     height: 0;
     padding: 0;
@@ -300,27 +299,27 @@ h2{
 }
 
 .module.active .module-content{
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .module.active .module1, .module.active .module6{
-    height: 19px;
+    height: 1.1875rem;
 }
 
 .module.active .module2{
-    height: 89px;
+    height: 5.5625rem;
 }
 
 .module.active .module3, .module.active .module4{
-    height: 264px;
+    height: 16.5rem;
 }
 
 .module.active .module5, .module.active .module7{
-    height: 54px;
+    height: 3.375rem;
 }
 
 .module-content li{
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 /* BONOS SECTION */
@@ -329,8 +328,8 @@ h2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    gap: 80px;
-    margin-bottom: 40px;
+    gap: 5rem;
+    margin-bottom: 2.5rem;
 }
 
 .bono{
@@ -338,7 +337,7 @@ h2{
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    max-height: 700px;
+    max-height: 43.75rem;
 }
 
 .bono-content{
@@ -349,24 +348,123 @@ h2{
 }
 
 .bono img{
-    height: 300px;
+    height: 18.75rem;
 }
 
 #meet-mockup, #bootstrap-mockup{
    width: 500px;
 }
 
-.bono .free{
+.free{
     color: #7cda24;
 }
 
-.bono .line-through{
+.line-through{
     text-decoration: line-through;
     color: #ff3f00;
 }
 
+/* Que Recibiras */
+
+section.w-75{
+    margin: 0 auto;
+}
+
+.desarrollo-web-img{
+    margin-top: 3rem;
+    border-radius: .5rem;
+}
+
+.ul-list{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1.75rem;
+    margin-top: 2rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.ul-list li{
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.ul-list strong{
+    font-size: 1em;
+}
+
+.prices-container{
+    margin-top: 1rem;
+}
+
+.prices-container h3{
+    font-size: 2.5em;
+}
+
+.price-strong{
+    font-weight: 800;
+    margin-top: .5rem;
+    font-size: 3em;
+}
+
+.price-strong.line-through{
+    font-size: 2.5em;
+}
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1200px){
     .bonos-container{
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .ul-list{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .ul-list li{
+        text-align: center;
+    }
+}
+
+/* Container Bootstrap Styles */ 
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
     }
 }
