@@ -82,7 +82,7 @@ button.bg-orange:hover{
 }
 
 button.bg-blue:hover{
-    background-color: darkblue;
+    background-color: #091127;
 }
 
 h1, h2, h3{
@@ -405,14 +405,31 @@ section.w-75{
 .price-strong{
     font-weight: 800;
     margin-top: .5rem;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 .price-strong.line-through{
     font-size: 2.5em;
 }
 
+.discount-expires{
+    font-size: 2em;
+    margin-top: 1rem;
+}
 
+.timer-container{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.timer-container strong{
+    color: var(--heading-color);
+    font-weight: 700;
+    font-size: 2.2em;
+}
 
 
 

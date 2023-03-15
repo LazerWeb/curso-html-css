@@ -14,20 +14,31 @@ function onModuleText(item){
     module.classList.contains('active') ? icon.textContent = 'remove' : icon.textContent = 'add';
 }
 
-function getRemainTime(deadline){
-    let now = new Date(),
-        remainTime = (new Date(deadline) - now + 1000) / 1000,
-        remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2),
-        remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
-        remainHours = ('0' + Math.floor(remainTime / 3600 % 24)).slice(-2);
-    
-    return {
-        remainTime,
-        remainSeconds,
-        remainMinutes, 
-        remainHours,
-    }
-        
-}
+// Timer
 
-console.log(new Date().getTime());
+const hoursText = document.querySelector('.hours strong');
+const minutesText = document.querySelector('.minutes strong');
+const secondsText = document.querySelector('.seconds strong');
+
+setInterval(() => {
+    const todayDate = new Date();
+    let hours = 23 - todayDate.getHours();
+    let minutes = 60 - todayDate.getMinutes();
+    let seconds = 60 - todayDate.getSeconds();
+
+    if(hours < 10){
+        hours = '0' + hours;
+    }
+
+    if(minutes < 10){
+        minutes = '0' + minutes;
+    }
+
+    if(seconds < 10){
+        seconds = '0' + seconds;
+    }
+
+    hoursText.textContent = hours;
+    minutesText.textContent = minutes;
+    secondsText.textContent = seconds;
+}, 1000)
