@@ -1,18 +1,39 @@
-const modulesText = document.querySelectorAll('.module-text');
-const showRemoveBtn = document.querySelector('.show-remove');
+const accordionItemHeaders = document.querySelectorAll('.accordion-item-header');
 
-modulesText.forEach((item) => {
+accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener('click', (e) => {
+        accordionItemHeader.classList.toggle('active');
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if(accordionItemHeader.classList.contains('active')){
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px';
+        } else{
+            accordionItemBody.style.maxHeight = 0;
+        }
+    })
+})
+
+
+/* const accordionText = document.querySelectorAll('.accordion-text');
+
+accordionText.forEach((item) => {
     item.addEventListener('click', () => {
-        onModuleText(item);
+        onAccordionText(item);
     });
 })
 
-function onModuleText(item){
-    const module = item.parentElement;
+function onAccordionText(item){
+    const accordionElement = item.parentElement;
+    const accordionBody = item.nextElementSibling;
     const icon = item.lastElementChild;
-    module.classList.toggle('active');
-    module.classList.contains('active') ? icon.textContent = 'remove' : icon.textContent = 'add';
-}
+    accordionElement.classList.toggle('active');
+    accordionElement.classList.contains('active') ? icon.textContent = 'remove' : icon.textContent = 'add';
+
+    if(item.classList.contains('active')){
+        accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
+    } else{
+        accordionBody.style.maxHeight = 0;
+    }
+} */
 
 // Timer
 
@@ -23,7 +44,7 @@ const secondsText = document.querySelector('.seconds strong');
 setInterval(() => {
     const todayDate = new Date();
     let hours = 23 - todayDate.getHours();
-    let minutes = 60 - todayDate.getMinutes();
+    let minutes = 59 - todayDate.getMinutes();
     let seconds = 60 - todayDate.getSeconds();
 
     if(hours < 10){

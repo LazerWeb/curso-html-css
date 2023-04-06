@@ -262,9 +262,9 @@ h2{
 }
 
 .module{
-    width: 510px;
+    width: 31.875rem;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 1.25rem;
     border: 1px solid #d9d9d9;
     border-radius: .625rem;
     margin-bottom: .625rem;
@@ -347,8 +347,24 @@ h2{
     gap: 10px;
 }
 
+.bono-content strong{
+    font-size: 1.25em;
+}
+
+.bono-content h3{
+    font-size: 1.5em;
+}
+
+.bono-content p{
+    font-size: 1.15em;
+}
+
 .bono img{
     height: 18.75rem;
+}
+
+.discount-h3{
+    font-size: 1.75em;
 }
 
 #meet-mockup, #bootstrap-mockup{
@@ -365,10 +381,6 @@ h2{
 }
 
 /* Que Recibiras */
-
-section.w-75{
-    margin: 0 auto;
-}
 
 .desarrollo-web-img{
     margin-top: 3rem;
@@ -395,7 +407,8 @@ section.w-75{
 }
 
 .prices-container{
-    margin-top: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
 }
 
 .prices-container h3{
@@ -405,16 +418,16 @@ section.w-75{
 .price-strong{
     font-weight: 800;
     margin-top: .5rem;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 .price-strong.line-through{
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .discount-expires{
-    font-size: 2em;
-    margin-top: 1rem;
+    font-size: 3em;
+    margin-top: 3rem;
 }
 
 .timer-container{
@@ -422,18 +435,172 @@ section.w-75{
     justify-content: center;
     gap: 1.5rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+}
+
+.timer-container div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .25rem;
+
 }
 
 .timer-container strong{
     color: var(--heading-color);
-    font-weight: 700;
-    font-size: 2.2em;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+.payment-methods{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.payment-methods a{
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: .25rem 1rem;
+    background-color: var(--primary-blue);
+}
+
+.payment-methods img{
+    max-height: 4rem;
+}
+
+.paypal-icon{
+    height: 3rem;
+}
+
+.section-separator{
+    margin-top: 4rem;
+}
+
+.guarantee-container{
+    margin-top: 4rem;
+}
+
+.guarantee-container p{
+    font-size: 1.25em;
+}
+
+.guarantee-container img{
+    margin-top: 2rem;
+    width: 35%;
+}
+
+/* Certification */
+
+#certification .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#certification .container img{
+    max-width: 48%;
+}
+
+#certification .container div{
+    width: 48%;
+}
+
+#certification p{
+    font-size: 1.25em;
+}
+
+/* TEACHER */
+
+.teacher-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.teacher-container img{
+    width: 40%;
+    border-radius: .75rem;
+}
+
+.teacher-info h3{
+    color: #1F92BF;
+    font-size: 2em;
+}
+
+.teacher-info p{
+    font-size: 1.25em;
 }
 
 
 
 
+/* FAQ */
+
+.faq-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-element{
+    border: 1px solid #d4d4d4;
+    border-top: none; 
+}
+
+.faq-element:first-child{
+    border-top: 1px solid #d4d4d4;
+}
+
+.accordion-item-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 350ms;
+}
+
+.accordion-item-body-content{
+    padding: 1rem;
+    padding-top: 0;
+}
+
+/* .faq-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 350ms;
+}
+
+.faq-content-container{
+    padding: 1rem;
+} */
+
+
+
+/* .faq-content{
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    padding-left: 1.25rem;
+    transition: all 600ms;
+}
+
+.faq-element.active .faq-content{
+    height: auto;
+}
+
+.faq-element.active .faq-content{
+    padding-left: 1.25rem;
+    padding-bottom: 1rem;
+} */
 
 
 @media only screen and (max-width: 1200px){
