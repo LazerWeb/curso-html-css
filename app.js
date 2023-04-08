@@ -1,10 +1,18 @@
 const accordionItemHeaders = document.querySelectorAll('.accordion-item-header');
 
 accordionItemHeaders.forEach(accordionItemHeader => {
-    accordionItemHeader.addEventListener('click', (e) => {
+    accordionItemHeader.addEventListener('click', () => {
+
+        const currentlyActiveAccordion = document.querySelector('.accordion-item-header.active');
+        if(currentlyActiveAccordion && currentlyActiveAccordion !== accordionItemHeader ){
+            currentlyActiveAccordion.classList.remove('active');
+            currentlyActiveAccordion.nextElementSibling.style.maxHeight = 0;
+        }
+
         accordionItemHeader.classList.toggle('active');
+
         const accordionItemBody = accordionItemHeader.nextElementSibling;
-        if(accordionItemHeader.classList.contains('active')){
+        if(accordionItemHeader.classList.contains('active')){         
             accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px';
         } else{
             accordionItemBody.style.maxHeight = 0;
