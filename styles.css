@@ -5,7 +5,7 @@ body{
 }
 
 html, body{
-    font-size: 100%;
+    font-size: 16px;
 }
 
 *{
@@ -22,7 +22,7 @@ html, body{
 /* GENERAL CLASSES */
 
 .m-auto{
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 .m-0{
@@ -84,6 +84,11 @@ html, body{
 .bg-green{
     background-color: #7CDA24;
 }
+
+.orange{
+    color: var(--primary-orange);
+}
+
 
 button.bg-orange:hover{
     background-color: #cc5226;
@@ -151,17 +156,22 @@ a{
     box-shadow: 0px 0px 12px -3px rgba(38,38,38,1);
 }
 
+.buy-btn span{
+    font-weight: 700;
+    font-size: 1em;
+}
+
 .title-header{
     background-color: var(--primary-orange);
     color: white;
-    padding: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 /* HEADER */
 
 h1{
-    font-size: 3em;
-    width: 70%;
+    font-size: 2.8em;
     margin: 0;
 }
 
@@ -186,36 +196,39 @@ section{
 }
 
 h2{
-    font-size: 2.75em;
+    font-size: 2.5em;
 }
 
 .for-you-container{
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .for-you-item{
+    width: 14rem;
     background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 2rem 1rem;
     border-radius: 0.5rem;
-    max-width: 25%;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
 }
 
 .for-you-item span{
     font-size: 4em;
-    
-    font-weight: bold;
+    color: var(--primary-orange);
+    font-weight: 800;
 }
 
 .for-you-item p{
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 .for-you-p{
@@ -229,47 +242,39 @@ h2{
     color: white;
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
-    padding-right: 1.875rem;
-    padding-left: 1.875rem;
 }
 
 #achievements .section-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 3.75rem;
+    gap: 3rem;
 }
 
-#principal-mockup{
-    width: 34.375rem;
+#achievements .section-content img{
+    width: 40%;
 }
 
-#laptop-mockup{
-    width: 34.375rem;
-}
-
-#achievements .section-content .achievements-ul{
-    list-style: none;
-    width: 45%;
-}
-
-#achievements ul{
-    list-style: none;
+#achievements .section-content ul{
     padding: 0;
     margin: 0;
 }
 
-#achievements .section-content ul li{
+.how-h2{
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+#achievements ul{
+    list-style: none;
+}
+
+#achievements ul li{
     font-size: 1.25em;
     margin-bottom: 1.5em;
 }
 
-.orange{
-    color: var(--primary-orange);
-}
-
-#achievements .section-content strong{
+#achievements strong{
     font-weight: 700;
 }
 
@@ -335,19 +340,27 @@ h2{
 /* BONOS SECTION */
 
 .bonos-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
     gap: 5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
 }
 
 .bono{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    max-height: 43.75rem;
+    gap: 1.25rem;
+    width: 50%;
+}
+
+.bono img{
+    width: 80%;
+}
+
+#whatsapp-mockup, #telegram-mockup{
+    width: 60%;
 }
 
 .bono-content{
@@ -369,16 +382,11 @@ h2{
     font-size: 1.15em;
 }
 
-.bono img{
-    height: 18.75rem;
-}
+
 
 .discount-h3{
     font-size: 1.75em;
-}
-
-#meet-mockup, #bootstrap-mockup{
-   width: 500px;
+    margin-top: 4rem;
 }
 
 .free{
@@ -390,9 +398,14 @@ h2{
     color: #ff3f00;
 }
 
+
+
 /* Que Recibiras */
 
+
+
 .desarrollo-web-img{
+    margin: 0 auto;
     margin-top: 3rem;
     border-radius: .5rem;
 }
@@ -400,9 +413,8 @@ h2{
 .ul-list{
     display: flex;
     justify-content: center; 
-    align-items: center;
     gap: 1.75rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding-left: 0;
     list-style: none;
 }
@@ -498,7 +510,7 @@ h2{
 
 .guarantee-container img{
     margin-top: 2rem;
-    width: 35%;
+    width: 30%;
 }
 
 /* Certification */
@@ -532,7 +544,7 @@ h2{
 }
 
 .teacher-container img{
-    width: 40%;
+    max-width: 40%;
     border-radius: .75rem;
 }
 
@@ -569,7 +581,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    gap: .25rem;
+    gap: .5rem;
 }
 
 .faq-item-header{
@@ -602,7 +614,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     gap: 2rem;
 }
 
@@ -651,25 +664,194 @@ h2{
 }
 
 
-@media only screen and (max-width: 1200px){
-    .bonos-container{
-        grid-template-columns: 1fr;
-    }
-}
-
 @media only screen and (max-width: 991px){
+
+    h1{
+        font-size: 2.25em;
+    }
+
     .ul-list{
         flex-direction: column;
         gap: 0;
     }
 
     .ul-list li{
+        margin-bottom: 2rem;
+    }
+    
+    #certification .container img{
+        max-width: 60%;
+    }
+    
+    #certification .container div{
+        width: 100%;
         text-align: center;
+    }
+    
+    #certification .buy-btn{
+        margin: 0 auto;
+    }
+
+    /* ACHIEVEMENTS */
+
+    #achievements .section-content{
+        flex-direction: column;
+    }
+    
+    #achievements .section-content img{
+        min-width: 70%;
+    }
+    
+    #achievements .section-content ul{
+        width: 100%;
     }
 }
 
+@media only screen and (max-width: 768px){
 
+    h1{
+        font-size: 2em;
+    }
 
+    h2{
+        font-size: 2.25em;
+    }
+
+    .bonos-container{
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .bono{
+        width: 100%;
+    }
+
+    .bonos-h2{
+        font-size: 1.85em;
+    }
+
+    html, body{
+        font-size: 14px;
+    }
+
+    /* TEACHER */
+    .teacher-container{
+        flex-direction: column;
+    }
+
+    .teacher-container img{
+        max-width: 60%;
+    }
+
+    .teacher-info{
+        text-align: center;
+    }
+
+    .teacher-info h3{
+        margin: 0;
+    }
+
+    /* ASESOR */
+
+    .asesor{
+        flex-direction: column;
+    }
+
+    .asesor-img{
+        text-align: center;
+        width: 40%;
+    }
+
+    .asesor-info{
+        text-align: center;
+    }
+
+    .asesor-info h2{
+        margin: 0;
+    }
+
+    .asesor .buy-btn{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    #access-btn{
+        
+        position: fixed;
+        bottom: .75rem;
+        right: .75rem;
+        border-radius: .375rem;
+        padding: .6rem;
+    }
+}
+
+@media only screen and (max-width: 517px){
+    .for-you-item{
+        width: 100%;
+    }
+
+    .desarrollo-web-img{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+
+    h1{
+        font-size: 1.75em;
+    } 
+
+    .principal-subtitle{
+        font-size: 1.10em;
+    }
+
+    .discount-expires{
+        font-size: 2em;
+    }
+
+    .price-strong.line-through{
+        font-size: 2.5em;
+    }
+
+    .price-strong{
+        font-size: 3em;
+    }
+
+    .timer-container{
+        gap: 1rem;
+    }
+
+    .timer-container strong{
+        font-size: 2em;
+    }
+
+    .prices-container h3{
+        font-size: 2em;
+    }
+
+    .last-cta h3{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    html, body{
+        font-size: 13.5px;
+    }
+
+    .last-cta{
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 310px){
+    .timer-container{
+        gap: .5rem;
+    }
+}
 
 /* Container Bootstrap Styles */ 
 
