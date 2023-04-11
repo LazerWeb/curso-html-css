@@ -680,7 +680,7 @@ h2{
     }
     
     #certification .container img{
-        max-width: 60%;
+        max-width: 65%;
     }
     
     #certification .container div{
@@ -688,7 +688,7 @@ h2{
         text-align: center;
     }
     
-    #certification .buy-btn{
+    #certification .certificate-btn{
         margin: 0 auto;
     }
 
@@ -708,6 +708,10 @@ h2{
 }
 
 @media only screen and (max-width: 768px){
+
+    #certification .container img{
+        max-width: 60%;
+    }
 
     h1{
         font-size: 2em;
@@ -772,14 +776,17 @@ h2{
         margin: 0;
     }
 
-    .asesor .buy-btn{
+    .asesor .asesor-btn{
         margin: 0 auto;
+    }
+
+    .guarantee-container img{
+        width: 50%;
     }
 }
 
 @media only screen and (max-width: 640px){
     #access-btn{
-        
         position: fixed;
         bottom: .75rem;
         right: .75rem;
@@ -795,6 +802,10 @@ h2{
 
     .desarrollo-web-img{
         width: 85%;
+    }
+
+    .guarantee-container img{
+        width: 65%;
     }
 }
 
@@ -843,7 +854,11 @@ h2{
     }
 
     .last-cta{
-        padding: 1rem 2rem;
+        padding: 1rem 1.75rem;
+    }
+
+    .last-cta ul li{
+        font-size: 1.25rem;
     }
 }
 
@@ -852,6 +867,13 @@ h2{
         gap: .5rem;
     }
 }
+
+@media only screen and (max-width: 285px){
+    .last-cta{
+        padding: 1rem 1.4rem;
+    }
+}
+
 
 /* Container Bootstrap Styles */ 
 

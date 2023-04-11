@@ -20,29 +20,6 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     })
 })
 
-
-/* const accordionText = document.querySelectorAll('.accordion-text');
-
-accordionText.forEach((item) => {
-    item.addEventListener('click', () => {
-        onAccordionText(item);
-    });
-})
-
-function onAccordionText(item){
-    const accordionElement = item.parentElement;
-    const accordionBody = item.nextElementSibling;
-    const icon = item.lastElementChild;
-    accordionElement.classList.toggle('active');
-    accordionElement.classList.contains('active') ? icon.textContent = 'remove' : icon.textContent = 'add';
-
-    if(item.classList.contains('active')){
-        accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
-    } else{
-        accordionBody.style.maxHeight = 0;
-    }
-} */
-
 // Timer
 
 const hoursText = document.querySelector('.hours strong');
