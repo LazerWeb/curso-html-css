@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 
     <!-- Meta Pixel Code -->
     <script>
@@ -204,7 +205,7 @@
                 
                 <div class="course-content-section">
 
-                    <img src="./assets/course-content/espacio-de-trabajo.png" alt="Espacio de trabajo">
+                    <img src="./assets/course-content/espacio-de-trabajo.webp" alt="Espacio de trabajo">
 
                     <div>
 
@@ -274,7 +275,7 @@
 
                 <div class="course-content-section">
 
-                    <img src="./assets/course-content/software.png" alt="Software">
+                    <img src="./assets/course-content/software.webp" alt="Software">
                     <div>
 
                         <div class="module">
@@ -885,6 +886,10 @@
 
     <script>
         // Facebook Pixel
+
+        setTimeout(() => {
+            fbq('trackCustom', '25seconds')
+        }, 25000)
 
         const accessBtn = document.querySelector('#access-btn');
         accessBtn.addEventListener('click', () => {
