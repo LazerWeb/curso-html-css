@@ -787,10 +787,6 @@ h2{
 
 @media only screen and (max-width: 640px){
     #access-btn{
-        position: fixed;
-        bottom: .75rem;
-        right: .75rem;
-        border-radius: .375rem;
         padding: .6rem;
     }
 }
@@ -859,6 +855,12 @@ h2{
 
     .last-cta ul li{
         font-size: 1.25rem;
+    }
+
+    #access-btn{
+        position: fixed;
+        bottom: 1.25rem;
+        right: 1.25rem;
     }
 }
 
