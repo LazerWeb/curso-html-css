@@ -131,6 +131,10 @@ a{
     cursor: pointer;
     transition: all 300ms;
     font-size: 1em;
+    -webkit-box-shadow: 0px 0px 12px -3px rgba(38,38,38,1);
+    -moz-box-shadow: 0px 0px 12px -3px rgba(38,38,38,1);
+    box-shadow: 0px 0px 12px -3px rgba(38,38,38,1);
+    z-index: 100;
 }
 
 #access-btn:hover{
@@ -557,7 +561,10 @@ h2{
     font-size: 1.25em;
 }
 
-
+.video-title{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
 
 /* FAQ */
@@ -639,7 +646,7 @@ h2{
     width: fit-content;
     border: 3px solid #cc5226;
     border-radius: .5rem;
-    padding: 1.5rem 3rem;
+    padding: 3rem 3rem;
     background-color: #0f1b3c;
 }
 
@@ -850,7 +857,7 @@ h2{
     }
 
     .last-cta{
-        padding: 1rem 1.75rem;
+        padding: 2rem 1.75rem;
     }
 
     .last-cta ul li{
@@ -872,7 +879,7 @@ h2{
 
 @media only screen and (max-width: 285px){
     .last-cta{
-        padding: 1rem 1.4rem;
+        padding: 2rem 1.4rem;
     }
 }
 

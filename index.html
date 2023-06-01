@@ -35,7 +35,7 @@
 
     <a class="buy-button" href="https://go.hotmart.com/J78176466B?ap=3a7f&offDiscount=superoferta" target="_blank">
         <button id="access-btn">
-            Acceder al Curso
+            Inscríbete al Curso
             <span class="material-symbols-outlined">
                 arrow_circle_right
             </span>
@@ -444,17 +444,7 @@
                 </div>
                      
 
-                <div class="container d-flex flex-column align-items-center">
-                    <h3 class="discount-h3 text-center">¡SI ACCEDES AL CURSO HOY TE <span class="orange">AHORRAS $80 USD!</span></h3>
-                    <a class="buy-button bonos-buy-btn" href="https://go.hotmart.com/J78176466B?ap=3a7f&offDiscount=superoferta" target="_blank">
-                        <button class="text-white buy-btn bg-orange">
-                            ¡QUIERO ESTOS BONOS!
-                            <span class='material-symbols-outlined'>
-                                arrow_circle_right
-                            </span>
-                        </button>
-                    </a>
-                </div>
+                <h3 class="container discount-h3 mb-0 text-center">¡SI ACCEDES AL CURSO HOY TE <span class="orange">AHORRAS $80 USD!</span></h3>
 
             </div>
 
@@ -663,6 +653,29 @@
                 </div>
             </div>
 
+            <h2 class="video-title text-center heading-color">Conoce la plataforma del curso por dentro 👇</h2>
+
+            <script src="https://fast.wistia.com/embed/medias/me5yyuw8nw.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="video-container wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_me5yyuw8nw seo=false videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/me5yyuw8nw/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+
+            <p style="margin-top: 1.75rem; margin-bottom: .75rem;" class="text-center for-you-p">
+                Lo mejor de todo es que tendrás <strong>acceso a las clases de la plataforma de por vida</strong> y podrás acceder a las futuras actualizaciones del curso <strong>totalmente gratis</strong>.
+            </p>
+
+            <p class="text-center m-auto for-you-p">
+                Pero esto no termina aquí, en caso de que te surga alguna duda durante tu aprendizaje, <strong>podrás agendar clases en vivo de consulta</strong> o directamente <strong>resolver tus preguntas con un asesor por WhatsApp.</strong>
+            </p>
+
+            <div class="m-auto" style="width: fit-content; margin-top: 2.25rem !important;">
+                <a class="buy-button" href="https://go.hotmart.com/J78176466B?ap=3a7f&offDiscount=superoferta" target="_blank">
+                    <button class="mt-4 text-white buy-btn bg-blue">
+                        ¡Quiero Acceder Al Curso!
+                        <span class='material-symbols-outlined'>
+                            arrow_circle_right
+                        </span>
+                    </button>
+                </a>
+            </div>
+
         </section>
 
         <section id="faq">
@@ -686,7 +699,7 @@
 
                             <div class="accordion-item-body">
                                 <p class="m-0 faq-item-body-content accordion-item-body-content">
-                                    La duración del Programa es variable, <strong>depende del estudiante.</strong> Normalmente en menos de 30 días queda finalizado. Puedes avanzar o detenerte, repetir clases o saltearlas, como tú desees. <strong>Las clases pregrabadas tienen una duración de 5 horas en total.</strong>
+                                    La duración del Programa es variable, <strong>depende del estudiante.</strong> Normalmente en menos de 30 días queda finalizado. Puedes avanzar o detenerte, repetir clases o saltearlas, como tú desees. <strong>Las clases pregrabadas tienen una duración de 5 horas en total.</strong> Por otro lado, Las clases de consulta en vivo las puedes agendar cuando quieras hasta que finalices el curso.
                                 </p>
                             </div>
 
@@ -823,7 +836,7 @@
 
                     <h2 class="mt-0 text-center">¿Ya Resolviste tus Dudas?</h2>
                     <div class="last-cta">
-                        <h3 class="text-center">Recuerda todo lo que vas a obtener al ingresar:</h3>
+                        <h3 class="text-center mt-0">Recuerda todo lo que vas a obtener al ingresar:</h3>
                         <ul>
 
                             <li>
@@ -896,11 +909,6 @@
             fbq('trackCustom', 'ClickAccessBuyBtn');
         })
 
-        const bonosBuyBtn = document.querySelector('.bonos-buy-btn');
-        bonosBuyBtn.addEventListener('click', () => {
-            fbq('trackCustom', 'ClickBonosBuyBtn');
-        })
-
         const principalBuyBtn = document.querySelector('.principal-buy-btn');
         principalBuyBtn.addEventListener('click', () => {
             fbq('trackCustom', 'ClickPrincipalBuyBtn');
@@ -909,6 +917,11 @@
         const certificateBuyBtn = document.querySelector('.certificate-buy-btn');
         certificateBuyBtn.addEventListener('click', () => {
             fbq('trackCustom', 'ClickCertificateBuyBtn');
+        })
+
+        const bonosBuyBtn = document.querySelector('.video-buy-btn');
+        bonosBuyBtn.addEventListener('click', () => {
+            fbq('trackCustom', 'ClickVideoBuyBtn');
         })
 
         const lastBuyBtn = document.querySelector('.last-buy-btn');
