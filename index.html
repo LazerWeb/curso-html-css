@@ -657,11 +657,11 @@
             </div>
         </section>
 
-        <section class="container">
+        <section>
 
-            <h2 class="text-center heading-color mt-0">¿Quién será tu Profesor?</h2>
+            <h2 class="text-center heading-color mt-0 container">¿Quién será tu Profesor?</h2>
 
-            <div class="teacher-container">
+            <div class="teacher-container container">
                 <img src="./assets/profesor.jpg" alt="Profesor Angel Daniel Fuentes Segura">
                 <div class="teacher-info">
                     <h3>Programador Angel Daniel Fuentes</h3>
@@ -676,7 +676,27 @@
                     <p>En su enseñanza, siempre busca aplicar <strong>ejemplos prácticos</strong> para que los estudiantes puedan ejercitar la <strong>lógica de programación</strong> y llevar a cabo proyectos propios desde cero.</p>
 
                     <p>¡Te aseguramos que te encuentras en buenas manos!</p>
-                </div>
+                </div>              
+            </div>
+
+            <h2 class="text-center heading-color container" style="margin-top: 3rem;">Mira lo que dicen nuestros estudiantes...</h2>
+
+            <div class="testimonios-container">
+                <img src="./assets/testimonios-1.jpg" alt="Testimonios 1">
+                <img src="./assets/testimonios-2.jpg" alt="Testimonios 2">
+                <img src="./assets/testimonios-3.jpg" alt="Testimonios 3">
+            </div>
+
+            <h3 class="text-center heading-color container" style="margin-top: 2.5rem; font-size: 2rem;">¿Quieres ser el próximo caso de éxito?</h3>
+            <div class="d-flex justify-content-center container">
+                <a class="buy-button testimonios-buy-btn" href="https://go.hotmart.com/J78176466B?ap=3a7f" target="_blank">
+                    <button class="text-white buy-btn bg-blue m-auto">
+                        ¡INGRESAR AL CURSO AHORA!
+                        <span class='material-symbols-outlined'>
+                            arrow_circle_right
+                        </span>
+                    </button>
+                </a>
             </div>
 
         </section>
@@ -823,7 +843,7 @@
                             </h2>
 
                             <p>
-                                No  te preocupes, uno de nuestros asesores está listo para ti para resolver todos esos interrogantes que tienes sobre nuestro producto, métodos de pago y el uso del mismo. No dudes un segundo en contactarnos!
+                                No  te preocupes, uno de nuestros asesores está listo para ti para resolver todos esos interrogantes que tienes sobre nuestro curso, métodos de pago y el uso del mismo. No dudes un segundo en contactarnos!
                             </p>
 
                             <div class="asesor-btn" style="width: fit-content;">
@@ -925,6 +945,11 @@
         const videoBuyBtn = document.querySelector('.video-buy-btn');
         videoBuyBtn.addEventListener('click', () => {
             fbq('trackCustom', 'ClickVideoBuyBtn');
+        })
+
+        const testimonyBuyBtn = document.querySelector('.testimonios-buy-btn');
+        testimonyBuyBtn.addEventListener('click', () => {
+            fbq('trackCustom', 'ClickTestimoniosBuyBtn');
         })
 
         const lastBuyBtn = document.querySelector('.last-buy-btn');

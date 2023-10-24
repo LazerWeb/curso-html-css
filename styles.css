@@ -565,6 +565,16 @@ h2{
     margin-bottom: 3rem;
 }
 
+.testimonios-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
 
 /* FAQ */
 
@@ -668,8 +678,6 @@ h2{
     font-weight: 800;
     margin-bottom: 2rem;
 }
-
-
 
 @media only screen and (max-width: 991px){
 
@@ -796,6 +804,11 @@ h2{
     #access-btn{
         padding: .6rem;
     }
+
+    .testimonios-container img{
+        width: 500px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 517px){
@@ -809,6 +822,11 @@ h2{
 
     .guarantee-container img{
         width: 65%;
+    }
+
+    .testimonios-container img{
+        width: 425px;
+        height: auto;
     }
 }
 
@@ -851,6 +869,13 @@ h2{
     }
 }
 
+@media only screen and (max-width: 435px){
+    .testimonios-container img{
+        width: 350px;
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 350px){
     html, body{
         font-size: 13.5px;
@@ -869,11 +894,28 @@ h2{
         bottom: 1.5rem;
         right: 1.5rem;
     }
+
+    .testimonios-container img{
+        width: 330px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .testimonios-container img{
+        width: 310px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 310px){
     .timer-container{
         gap: .5rem;
+    }
+
+    .testimonios-container img{
+        width: 280px;
+        height: auto;
     }
 }
 
