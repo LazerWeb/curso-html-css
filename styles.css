@@ -679,6 +679,34 @@ h2{
     margin-bottom: 2rem;
 }
 
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+footer h3{
+    margin: 0;
+}
+
+footer h3 a{
+    text-decoration: underline;
+    color: rgb(235, 235, 235);
+    transition: all 250ms;
+}
+
+footer h3 a:hover{
+    color: white;
+}
+
+
+
+
+
 @media only screen and (max-width: 991px){
 
     h1{
