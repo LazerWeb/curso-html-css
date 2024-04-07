@@ -48,23 +48,3 @@ setInterval(() => {
     minutesText.textContent = minutes;
     secondsText.textContent = seconds;
 }, 1000)
-
-
-const footer = document.querySelector('footer');
-
-document.addEventListener('DOMContentLoaded', createObserver);
-
-function createObserver(){
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                accessBtn.style.display = 'none';
-            } else{
-                accessBtn.style.display = 'flex';
-            }
-        })
-    })
-
-    observer.observe(footer);
-}
